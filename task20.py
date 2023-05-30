@@ -34,7 +34,7 @@ for letter in word.upper():
 if sum == 0:
     for letter in word.upper():
         sum += rus_letter.get(letter, 0)
-print(sum) 
+print(f"Стоимость слова <{word}> - {sum}") 
 
 
 
