@@ -21,6 +21,6 @@ def syllable_count(word):
         return sum([word.count(letter) for letter in vowels])
     return sum([letter in vowels for letter in word])
 
-word = input("Введите фразу: ").replace('-','').split()
+word = input("Введите фразу: ").replace('-','').split() #меняем "-" на "", разделяем строку
 print(('Пам парам', 'Парам пам-пам')[len(set(map(syllable_count,word))) <= 1])
 
